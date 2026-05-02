@@ -1,0 +1,43 @@
+:root{
+    --background:#F8F9FA;
+    --background-cards: #FFFFFF;
+    --border: #CED4DA;
+    --primary-buttom: #218838;
+    --stats-critical: #DC3545;
+    --stats-urgent: #FD7E14;
+    --stats-observation: #FFC107;
+    --stats-estability:#28A745;
+    --box-shadow: 0 2 2 2 #000;
+    --subtitle:#b5b6b8;
+    --labels-filtro: #f8fbfd;
+    --text:#5e5e5e;
+    --text-white:#fffbfb;
+    --box-shadow: 0 1px 2px 1px #0000002d;
+    --cards-secundarios: #dfecf9;
+    --cards-hover: #b6ff94;
+}
+
+.estado-critico {
+    --background-icon:rgba(220, 53, 70, 0.417);
+    --number-color: var(--stats-critical);
+}
+
+.estado-urgente {
+    --background-icon:rgba(253, 125, 20, 0.411);
+    --number-color: var(--stats-urgent);
+}
+
+.estado-em-observacao {
+    --background-icon:rgba(255, 193, 7, 0.373);
+    --number-color: var(--stats-observation);
+}
+
+.estado-estavel {
+    --background-icon:rgba(122, 241, 150, 0.801);
+    --number-color: var(--stats-estability);
+}
+
+.estado-total {
+    --background-icon:#9ab8ffd8;
+    --number-color: #004cff;
+}
