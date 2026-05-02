@@ -1,0 +1,16 @@
+
+/* Importação da fundação do design */
+@import url(reset.css);
+@import url(variable.css);
+@import url(layout/grid.css);
+@import url(layout/aside.css);
+@import url(layout/header.css);
+@import url(layout/pacientes-grid.css);
+@import url(components/search.css);
+@import url(components/filters.css);
+@import url(components/toolbar.css);
+@import url(components/buttons.css);
+@import url(components/paciente-info.css);
+
+
+
