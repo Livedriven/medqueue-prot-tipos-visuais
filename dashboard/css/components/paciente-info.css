@@ -1,0 +1,49 @@
+.container-resumo-pacientes {
+    display: grid;
+    grid-template-areas: 
+        "icone numero"
+        "decricao numero"
+    ;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: var(--background-cards);
+    box-shadow: var(--box-shadow);
+}
+
+.container-resumo-pacientes .number-pacientes {
+    grid-area: numero;
+    margin-left: auto;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.estado-total img, .estado-critico img, .estado-urgente img, .estado-em-observacao img, .estado-estavel img {
+    grid-area: icone;
+    border-radius: 10px;
+    padding: 3px;
+    height: 26px;
+    width: 26px;
+    background-color: var(--background-icon);
+}
+
+.img-com-tamanho-errado {
+    width: 24px;
+    height: 24px;
+}
+
+.card-descricao {
+    grid-area: decricao;
+    color: var(--subtitle);
+    font-size: 0.8rem;
+}
+
+.total, .critico, .urgente, .em-observacao, .estavel {
+    font-weight: bold;
+}
+
+.estado-total .total, .estado-critico .critico, .estado-urgente .urgente, .estado-em-observacao .em-observacao, .estado-estavel .estavel {
+    color: var(--number-color);
+}

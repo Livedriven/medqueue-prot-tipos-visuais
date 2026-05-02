@@ -1,0 +1,57 @@
+/* Painel retrátil de filtros */
+.container-filtros {
+    display: none;
+    /* Estado oculto inicial manipulado por JS */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+    border: 0.5px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--background-cards);
+}
+
+.container-parametros-filtros {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Rótulo base para as opções de filtro */
+.label-filtro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 7px;
+    background-color: var(--labels-filtro);
+    border-radius: 10px;
+}
+
+.paragrafh-filtro {
+    color: var(--text);
+}
+
+.filtro-radio {
+    height: 25px;
+    width: 10px;
+}
+
+/* Botão gatilho para abrir o modal/painel de filtros */
+#btn-filtro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 0 1 auto;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 13px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-cards);
+}
+
+#btn-toggle {
+    border: none;
+    font-size: 1rem;
+    color: var(--text);
+    font-weight: bold;
+    background: none;
+    cursor: pointer;
+}

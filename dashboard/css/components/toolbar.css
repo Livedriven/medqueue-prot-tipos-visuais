@@ -1,0 +1,57 @@
+.toolbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+/* Agrupador "Pílula" (Overflow hidden corta os cantos dos botões internos) */
+.toolbar {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background-color: var(--background-cards);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    height: 48px;
+}
+
+/* Oculta o marcador padrão do navegador do radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Botão visual customizado atrelado ao radio oculto */
+.toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 100%;
+    cursor: pointer;
+    color: var(--text);
+    transition: background-color 0.5s ease;
+}
+
+.icon {
+    width: 22px;
+    height: auto;
+}
+
+.toggle-btn .icon-active {
+    display: none;
+}
+
+/* Lógica de estado ativo via CSS (Se selecionado, muda a cor e troca ícone) */
+input[type="radio"]:checked+.toggle-btn {
+    background-color: var(--primary-buttom);
+}
+
+input[type="radio"]:checked+.toggle-btn .icon-inactive {
+    display: none;
+}
+
+input[type="radio"]:checked+.toggle-btn .icon-active {
+    display: block;
+}

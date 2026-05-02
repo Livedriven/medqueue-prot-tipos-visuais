@@ -1,0 +1,28 @@
+/* Caixa contêiner da lupa e do input */
+.label-buscas {
+    display: flex;
+    gap: 0.5rem;
+    margin: 10px;
+    flex: 1 0 auto;
+    /* Preenche o espaço disponível na tela */
+    padding: 12px;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    background-color: var(--background-cards);
+    box-shadow: var(--box-shadow);
+    transition: border 0.5s ease;
+    cursor: text;
+}
+
+/* Acessibilidade visual: destaca o contêiner quando o usuário digita */
+.label-buscas:focus-within {
+    border: 1px solid var(--stats-estability);
+}
+
+/* Input cru invisível dentro do contêiner */
+#buscas {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+}

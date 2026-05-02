@@ -1,0 +1,28 @@
+/* Botão principal (Ex: Cadastrar Paciente) */
+.container-adicionar-paciente {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--primary-buttom);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    /* Feedback tátil geral para o bloco inteiro */
+}
+
+.container-adicionar-paciente img {
+    height: 20px;
+    color: var(--text-white);
+}
+
+/* Reset do elemento <button> cru para assumir o design do container */
+.button-paciente {
+    color: var(--text-white);
+    font-size: 17px;
+    font-weight: 500;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
