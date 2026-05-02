@@ -1,0 +1,21 @@
+{
+  "name": "medqueue-prot-tipos-visuais",
+  "version": "1.0.0",
+  "description": "Este repositório funciona como um **laboratório de prototipação visual** para o desenvolvimento da interface do sistema **MedQueue**.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Livedriven/MedQueue-Prot-tipos-Visuais.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Livedriven/MedQueue-Prot-tipos-Visuais/issues"
+  },
+  "homepage": "https://github.com/Livedriven/MedQueue-Prot-tipos-Visuais#readme"
+}

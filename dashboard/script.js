@@ -1,0 +1,1 @@
+const filtrobtn = document.querySelector("#btn-filtro");
