@@ -1,0 +1,54 @@
+/* Barra do topo fixada na área 'header' do body */
+.header-container {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-cards);
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+}
+
+/* Agrupador esquerdo do cabeçalho */
+.container-title-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 20px;
+}
+
+.page-title {
+    font-size: 1.3rem;
+}
+
+.page-subtitle {
+    font-size: small;
+    color: var(--subtitle);
+}
+
+/* Agrupador direito do cabeçalho (Perfil e Notificações) */
+.perfil-container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 15px;
+}
+
+.container-user {
+    padding-left: 20px;
+    height: 100%;
+    border-left: 1px solid var(--border);
+}
+
+.user-name {
+    margin-top: 5px;
+    font-size: small;
+}
+
+/* Ícones do cabeçalho */
+#img-menu,
+#notificacao {
+    height: 23px;
+    margin-top: 5px;
+}

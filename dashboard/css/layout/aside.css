@@ -1,0 +1,89 @@
+/* Fixa o menu na área 'aside' do body e organiza em coluna */
+.aside-menu {
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1rem;
+    background-color: var(--background-cards);
+    box-shadow: var(--box-shadow);
+}
+
+/* Cabeçalho do menu lateral (Logo/Título) */
+.container-title-menu-aside {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-title-aside {
+    font-size: 1rem;
+}
+
+.page-subtitle-aside {
+    font-size: 0.7rem;
+    color: var(--subtitle);
+}
+
+/* Navegação e links do menu */
+.nav-menu-aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.title-nav {
+    font-size: 0.695rem;
+    color: var(--subtitle);
+}
+
+.lista-navegacao {
+    display: inline-flex;
+    gap: 1rem;
+    flex-direction: column;
+    list-style: none;
+}
+
+/* Efeito de hover suave para os links de navegação */
+.link-navegacao {
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.link-navegacao a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.link-navegacao:hover {
+    background-color: var(--cards-hover);
+    color: var(--text-white);
+}
+
+/* Rodapé do menu lateral (Perfil de usuário) */
+.perfil-container-aside {
+    display: flex;
+    margin-top: auto;
+    /* Empurra o perfil para o final da coluna */
+    gap: 1rem;
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid var(--border);
+}
+
+.container-user-aside {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--cards-secundarios);
+    box-shadow: var(--box-shadow);
+}

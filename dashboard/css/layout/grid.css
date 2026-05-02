@@ -1,0 +1,66 @@
+/* Grid Raiz: Divide a tela inteira entre menu lateral, cabeçalho e conteúdo. */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    grid-template-areas:
+        "aside header"
+        "aside main"
+        "aside footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto 1fr;
+    background-color: var(--background);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* Grid de Conteúdo: Define os blocos internos da área de trabalho principal. */
+.main-container {
+    grid-area: main;
+    display: grid;
+    grid-template-areas:
+        "header-main"
+        "filtros"
+        "informacoes"
+        "pacientes";
+    grid-template-rows: auto auto auto 1fr;
+    padding: 5px;
+}
+
+/* Posicionamento das "gaiolas" de conteúdo no grid principal */
+.header-main-container {
+    grid-area: header-main;
+    padding: 20px;
+}
+
+.header-main-container h1 {
+    margin-bottom: 4px;
+}
+
+.container-parametros {
+    grid-area: filtros;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Container responsivo para cards informativos e painéis */
+.container-informacoes {
+    grid-area: informacoes;
+    padding: 10px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+/* Container dinâmico que adapta a quantidade de cards de pacientes por linha */
+.container-pacientes {
+    grid-area: pacientes;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-container {
+    grid-area: footer;
+}
