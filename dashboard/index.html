@@ -10,6 +10,10 @@
 
 <body>
     <header class="header-container">
+        <div id="aside-toggle">
+            <img src="assets/sidebar-ativo.png" class="aside-icon-open" alt="icone de uma janela aberta">
+            <img src="assets/sidebar-inativo.png" class="aside-icon-fechado inativo" alt="icone de um janela fechada">
+        </div>
         <div class="perfil-container">
             <figure>
                 <img src="assets/notificacao.png" alt="Icone de notificação" id="notificacao">
@@ -21,7 +25,7 @@
         </div>
     </header>
 
-    <aside class="aside-menu">
+    <aside class="aside-menu ">
         <div class="container-title-menu-aside">
             <div>
                 <h1 class="page-title-aside">MedQueue</h1>
@@ -58,24 +62,13 @@
         <section class="container-parametros">
             <label for="buscas" class="label-buscas">
                 <img src="assets/lupa.png" id="lupa-buscas" alt="icone de uma lupa de busca">
-                <input type="text" id="buscas" name="buscas" placeholder="Buscar por nome, CPF, ala ou médico" min="3" max="200">
+                <input type="text" id="buscas" name="buscas" placeholder="Buscar por nome, CPF, ala ou médico" min="3"
+                    max="200">
             </label>
-            
-            <div>
-                <div id="btn-filtro">
-                    <img src="assets/filtro.png" alt="icone de filtro">
-                    <button type="button" id="btn-toggle">Filtros</button>
-                </div>
-                <fieldset class="container-filtros">
-                    <legend class="paragrafh-filtro">Filtrar por status:</legend>
-                    <div class="container-parametros-filtros">
-                        <label class="label-filtro" for="todos"><input type="radio" class="filtro-radio" id="todos" name="filtro" value="todos">Todos</label>
-                        <label class="label-filtro" for="critico"><input type="radio" class="filtro-radio" id="critico" name="filtro" value="critico">Crítico</label>
-                        <label class="label-filtro" for="urgente"><input type="radio" class="filtro-radio" id="urgente" name="filtro" value="urgente">Urgente</label>
-                        <label class="label-filtro" for="em-observação"><input type="radio" class="filtro-radio" id="em-observação" name="filtro" value="em observação">Em Observação</label>
-                        <label class="label-filtro" for="estavel"><input type="radio" class="filtro-radio" id="estavel" name="filtro" value="estavel">Estável</label>
-                    </div>
-                </fieldset>
+
+            <div id="btn-filtro" tabindex="0">
+                <img src="assets/filtro.png" alt="icone de filtro">
+                <button type="button" id="btn-toggle">Filtros</button>
             </div>
 
             <div class="toolbar-container">
@@ -85,7 +78,7 @@
                         <img src="assets/quadrados.png" class="icon icon-active" alt="Grade Ativa">
                         <img src="assets/quadrados (1).png" alt="Grade Inativa" class="icon icon-inactive">
                     </label>
-                    
+
                     <input type="radio" name="view-toggle" id="view-list">
                     <label for="view-list" class="toggle-btn">
                         <img src="assets/lista-de-reproducao (1).png" class="icon icon-active" alt="Lista Ativa">
@@ -97,6 +90,36 @@
             <div class="container-adicionar-paciente" id="paciente-btn">
                 <img src="assets/mais.png" alt="Sinal de mais">
                 <button type="button" class="button-paciente">Novo Paciente</button>
+            </div>
+
+            <div class="container-filtros inativo">
+                <legend class="title-filtro">Filtrar por status:</legend>
+                <div class="container-parametros-filtros">
+                    <label class="label-filtro label-todos" for="todos" tabindex="0">
+                        <input type="radio" class="filtro-radio" id="todos" name="filtro" value="todos">
+                        Todos
+                    </label>
+                    <label class="label-filtro label-critico" for="critico" tabindex="0">
+                        <div class="bolinha critico-filter"></div>
+                        <input type="radio" class="filtro-radio" id="critico" name="filtro" value="critico">
+                        Crítico
+                    </label>
+                    <label class="label-filtro label-urgente" for="urgente" tabindex="0">
+                        <div class="bolinha urgente-filter"></div>
+                        <input type="radio" class="filtro-radio" id="urgente" name="filtro" value="urgente">
+                        Urgente
+                    </label>
+                    <label class="label-filtro label-observacao" for="em-observação" tabindex="0">
+                        <div class="bolinha observacao-filter"></div>
+                        <input type="radio" class="filtro-radio"id="em-observação" name="filtro" value="em observação">
+                            Em Observação
+                    </label>
+                    <label class="label-filtro label-estavel" for="estavel" tabindex="0">
+                        <div class="bolinha estavel-filter"></div>
+                        <input type="radio" class="filtro-radio" id="estavel"name="filtro" value="estavel">
+                        Estável
+                    </label>
+                </div>
             </div>
         </section>
 
@@ -133,93 +156,117 @@
         </section>
 
         <section class="container-pacientes">
-            <header>
+            <header class="header-pacientes">
                 <h1 class="title-pacientes">Todos os Pacientes</h1>
-                <p class="number">8 de 8 Pacientes</p>
+                <p class="subtitle-pacientes">8 de 8 Pacientes</p>
             </header>
 
             <div class="container-grid-cards-pacientes">
-                
-                <article class="card-paciente card-estado-critico">
-                    <header>
-                        <h2>Carlos Eduardo Mendes</h2>
-                        <p>67 anos - UTI</p>
-                    </header>
-                    <div>
-                        <div>
-                            <p>123.456.789-00</p>
+
+                <article class="card-paciente card-estado-critico estado-critico">
+                    <header class="header-card-paciente">
+                        <div class="icon-paciente critico">
+                            <img src="assets/paciente.png" class="icone-paciente critico" alt="icone de paciente">
                         </div>
                         <div>
-                            <div></div>
+                            <h2 class="paciente-name">Carlos Eduardo Mendes</h2>
+                            <p class="paciente-info">67 anos - UTI</p>
+                        </div>
+                    </header>
+                    <div class="card-main">
+                        <div class="paciente-cpf">
+                            <img src="assets/relatorio.png" alt="">
+                            <p>123.456.789-00</p>
+                        </div>
+                        <div class="paciente-estado">
+                            <div class="bolinha critico"></div>
                             <p>Critico</p>
                         </div>
                     </div>
-                    <footer>
+                    <footer class="footer-card-paciente">
                         <p>(11) 98454-5678</p>
-                        <p><time datetime="2026-04-23">23/04/2026</time></p>
+                        <p class="data-paciente"><time datetime="2026-04-23">23/04/2026</time></p>
                         <p>Atualizado há 5 min - Dr. Richard Henrique</p>
                     </footer>
                 </article>
 
-                <article class="card-paciente card-estado-urgente">
-                    <header>
-                        <h2>Maria Clara Silva</h2>
-                        <p>45 anos - Ala A</p>
-                    </header>
-                    <div>
-                        <div>
-                            <p>987.654.321-00</p>
+                <article class="card-paciente card-estado-urgente estado-urgente">
+                    <header class="header-card-paciente">
+                        <div class="icon-paciente urgente">
+                            <img src="assets/paciente.png" class="icone-paciente urgente" alt="icone de paciente">
                         </div>
                         <div>
-                            <div></div>
+                            <h2 class="paciente-name">Maria Clara Silva</h2>
+                            <p class="paciente-info">45 anos - Ala A</p>
+                        </div>
+                    </header>
+                    <div class="card-main">
+                        <div class="paciente-cpf">
+                            <img src="assets/relatorio.png" alt="">
+                            <p>987.654.321-00</p>
+                        </div>
+                        <div class="paciente-estado">
+                            <div class="bolinha urgente"></div>
                             <p>Urgente</p>
                         </div>
                     </div>
-                    <footer>
+                    <footer class="footer-card-paciente">
                         <p>(11) 91234-5678</p>
-                        <p><time datetime="2026-04-22">22/04/2026</time></p>
+                        <p class="data-paciente"><time datetime="2026-04-22">22/04/2026</time></p>
                         <p>Atualizado há 10 min - Dr. Richard Henrique</p>
                     </footer>
                 </article>
 
-                <article class="card-paciente card-estado-em-observacao">
-                    <header>
-                        <h2>João Pedro Souza</h2>
-                        <p>52 anos - Ala B</p>
-                    </header>
-                    <div>
-                        <div>
-                            <p>456.789.123-00</p>
+                <article class="card-paciente card-estado-em-observacao estado-em-observacao">
+                    <header class="header-card-paciente">
+                        <div class="icon-paciente observacao">
+                            <img src="assets/paciente.png" class="icone-paciente observacao" alt="icone de paciente">
                         </div>
                         <div>
-                            <div></div>
+                            <h2 class="paciente-name">João Pedro Souza</h2>
+                            <p class="paciente-info">52 anos - Ala B</p>
+                        </div>
+                    </header>
+                    <div class="card-main">
+                        <div class="paciente-cpf">
+                            <img src="assets/relatorio.png" alt="">
+                            <p>456.789.123-00</p>
+                        </div>
+                        <div class="paciente-estado">
+                            <div class="bolinha observacao"></div>
                             <p>Em Observação</p>
                         </div>
                     </div>
-                    <footer>
+                    <footer class="footer-card-paciente">
                         <p>(11) 99876-5432</p>
-                        <p><time datetime="2026-04-21">21/04/2026</time></p>
+                        <p class="data-paciente"><time datetime="2026-04-21">21/04/2026</time></p>
                         <p>Atualizado há 15 min - Dr. Richard Henrique</p>
                     </footer>
                 </article>
 
-                <article class="card-paciente card-estado-estavel">
-                    <header>
-                        <h2>Ana Beatriz Oliveira</h2>
-                        <p>30 anos - Ala C</p>
-                    </header>
-                    <div>
-                        <div>
-                            <p>321.654.987-00</p>
+                <article class="card-paciente card-estado-estavel estado-estavel">
+                    <header class="header-card-paciente">
+                        <div class="icon-paciente estavel">
+                            <img src="assets/paciente.png" class="icone-paciente estavel" alt="icone de paciente">
                         </div>
                         <div>
-                            <div></div>
+                            <h2 class="paciente-name">Ana Beatriz Oliveira</h2>
+                            <p class="paciente-info">30 anos - Ala C</p>
+                        </div>
+                    </header>
+                    <div class="card-main">
+                        <div class="paciente-cpf">
+                            <img src="assets/relatorio.png" alt="">
+                            <p>321.654.987-00</p>
+                        </div>
+                        <div class="paciente-estado">
+                            <div class="bolinha estavel"></div>
                             <p>Estável</p>
                         </div>
                     </div>
-                    <footer>
+                    <footer class="footer-card-paciente">
                         <p>(11) 98765-4321</p>
-                        <p><time datetime="2026-04-20">20/04/2026</time></p>
+                        <p class="data-paciente"><time datetime="2026-04-20">20/04/2026</time></p>
                         <p>Atualizado há 20 min - Dr. Richard Henrique</p>
                     </footer>
                 </article>
