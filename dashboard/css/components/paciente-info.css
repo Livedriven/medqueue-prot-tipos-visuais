@@ -20,7 +20,7 @@
     color: var(--text-color);
 }
 
-.estado-total img, .estado-critico img, .estado-urgente img, .estado-em-observacao img, .estado-estavel img {
+.estado-total .img-com-tamanho-errado, .estado-critico .img-com-tamanho-errado, .estado-urgente .img-com-tamanho-errado, .estado-em-observacao .img-com-tamanho-errado, .estado-estavel .img-com-tamanho-errado {
     grid-area: icone;
     border-radius: 10px;
     padding: 3px;

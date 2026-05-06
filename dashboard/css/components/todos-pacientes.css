@@ -1,0 +1,100 @@
+.header-pacientes{
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.title-pacientes{
+    font-size: 1rem;
+}
+
+.subtitle-pacientes{
+    font-size: 0.865rem;
+    color: var(--subtitle);
+}
+
+.card-paciente{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.critico .icone-paciente, .urgente .icone-paciente, .observacao .icone-paciente, .estavel .icone-paciente {
+    width: 34px;
+    height: 34px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: var(--background-icon);
+}
+
+.header-card-paciente {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.card-main{
+    padding-left: 10px;
+}
+
+.footer-card-paciente {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    font-size: 0.777em;
+    border-top: 1px solid var(--border);
+    color: var(--text-secondary);
+}
+
+.header-card-paciente .paciente-name{
+    font-size: 0.965rem;
+}
+.header-card-paciente .paciente-info{
+    font-size: 0.765rem;
+    color: var(--subtitle);
+}
+
+.paciente-cpf{
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+    background-color: var(--card-cpf);
+    height: auto;
+    width:43%;
+}
+
+.paciente-cpf p{
+    font-size: 0.665em;
+}
+
+.paciente-cpf img{
+    height: 0.775rem;
+}
+
+.paciente-estado{
+    display: flex;
+    gap: 7px;
+    background-color: var(--card-estado);
+    padding: 7px;
+    padding-left: 10px;
+    border-radius: 10px;
+    width: 37%;
+    border: 1px solid var(--background-icon);
+
+}
+.card-estado-em-observacao .paciente-estado{
+    width: 47%;
+}
+
+.paciente-estado p{
+    font-size: 0.695rem;
+    color: var(--number-color);
+    font-weight: 700;
+}
+

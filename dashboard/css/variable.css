@@ -14,29 +14,47 @@
     --box-shadow: 0 1px 2px 1px #0000002d;
     --cards-secundarios: #dfecf9;
     --cards-hover: #b6ff94;
+    --card-cpf:#f1f1f1;
 }
 
-.estado-critico {
-    --background-icon:rgba(220, 53, 70, 0.417);
+.estado-critico, .critico-filter, .label-critico {
+    --background-icon:#dc35466a;
+    --card-estado:#fd667555;
+    --background-label:#ffb5b5c6;
     --number-color: var(--stats-critical);
 }
 
-.estado-urgente {
-    --background-icon:rgba(253, 125, 20, 0.411);
+.estado-urgente, .urgente-filter, .label-urgente {
+    --background-icon:#fd7d1469;
+    --card-estado:#fd7d143f;
+    --background-label:#ffcaaad7;
     --number-color: var(--stats-urgent);
 }
 
-.estado-em-observacao {
-    --background-icon:rgba(255, 193, 7, 0.373);
+.estado-em-observacao , .observacao-filter, .label-observacao {
+    --background-icon:#ffc1075f;
+    --card-estado:#fed96947;
+    --background-label:#fff2b8ef;
     --number-color: var(--stats-observation);
 }
 
-.estado-estavel {
-    --background-icon:rgba(122, 241, 150, 0.801);
+.estado-estavel, .estavel-filter, .label-estavel {
+    --background-icon:#7af196cc;
+    --card-estado:#91fbaa54;
+    --background-label:#caffc7bc;
     --number-color: var(--stats-estability);
 }
 
-.estado-total {
+.estado-total, .label-todos {
     --background-icon:#9ab8ffd8;
+    --background-label:#b9b1b1;
     --number-color: #004cff;
+    --card-estado:#929292;
+}
+
+.icon-paciente {
+    --background-critico:#ff384cf0; 
+    --background-urgente:#ff9b4cf0;
+    --background-observacao:#ffde4cf0;
+    --background-estavel:#57ff84f0;
 }

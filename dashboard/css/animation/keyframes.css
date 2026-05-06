@@ -1,0 +1,18 @@
+@keyframes click{
+    0% {
+        transform: scale(1);
+    }
+
+    40%{
+        transform: scale(0.95);
+    }
+
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+#btn-filtro.animar{
+    animation: click 200ms ease-out;
+}

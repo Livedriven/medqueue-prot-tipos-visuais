@@ -3,6 +3,7 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
+    flex: 1 0 auto;
     padding: 15px;
     border-radius: 20px;
     background-color: var(--primary-buttom);

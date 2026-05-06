@@ -87,3 +87,13 @@
     background-color: var(--cards-secundarios);
     box-shadow: var(--box-shadow);
 }
+
+.aside-icon-open, .aside-icon-fechado{
+    width: 22px;
+    height: 22px;
+}
+
+#aside-toggle{
+    cursor: pointer;
+}
+

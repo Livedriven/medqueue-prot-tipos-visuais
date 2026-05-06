@@ -11,6 +11,17 @@
 @import url(components/toolbar.css);
 @import url(components/buttons.css);
 @import url(components/paciente-info.css);
+@import url(components/todos-pacientes.css);
+@import url(animation/keyframes.css);
 
+.inativo{
+    display: none;
+}
 
-
+.bolinha{
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    margin-top: 0.10px;
+    background-color: var(--number-color);
+}
