@@ -1,7 +1,7 @@
 # MedQueue-Prot-tipos-Visuais
 Este repositório funciona como um **laboratório de prototipação visual** para o desenvolvimento da interface do sistema **MedQueue**.
 
-O objetivo é construir, testar e validar a camada visual da aplicação de forma isolada, utilizando **HTML, CSS e JavaScript**, antes de integrar a interface à arquitetura principal do projeto, baseada em **MVC** e **Single Page Application (SPA)** com **Vanilla JavaScript**.
+O objetivo é construir, testar e validar a camada visual da aplicação de forma isolada, utilizando **HTML, CSS e JavaScript**, antes de integrar a interface à arquitetura principal do projeto, baseada em **MVC* com **Vanilla JavaScript**.
 
 ## 🎯 Objetivo do Repositório
 Este projeto tem como foco o desenvolvimento estático e interativo da interface do MedQueue, permitindo validar:
